@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using MVCCorret2019.Data;
 
 namespace MVCCorret2019
 {
@@ -33,6 +35,9 @@ namespace MVCCorret2019
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<MVCCorret2019Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MVCCorret2019Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

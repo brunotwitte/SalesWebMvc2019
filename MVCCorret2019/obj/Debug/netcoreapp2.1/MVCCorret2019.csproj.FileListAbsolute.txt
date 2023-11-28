@@ -34,4 +34,8 @@ C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\M
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\MVCCorret2019.pdb
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\MVCCorret2019.genruntimeconfig.cache
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\MVCCorret2019.csproj.CopyComplete
+C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Create.cshtml.g.cs
+C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Delete.cshtml.g.cs
+C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Details.cshtml.g.cs
+C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.cshtml.g.cs
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.cshtml.g.cs
