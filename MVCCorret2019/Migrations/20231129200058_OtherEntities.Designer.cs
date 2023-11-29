@@ -3,14 +3,16 @@ using System;
 using MVCCorret2019.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MVCCorret2019.Migrations
 {
     [DbContext(typeof(MVCCorret2019Context))]
-    partial class MVCCorret2019ContextModelSnapshot : ModelSnapshot
+    [Migration("20231129200058_OtherEntities")]
+    partial class OtherEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
