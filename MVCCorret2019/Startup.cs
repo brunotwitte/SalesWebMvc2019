@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MVCCorret2019.Data;
+using MVCCorret2019.Services;
 
 namespace MVCCorret2019
 {
@@ -41,6 +42,7 @@ namespace MVCCorret2019
                     Builder.MigrationsAssembly("MVCCorret2019")));
             //Registro no servico de dependencia da Aplicacao
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
 
