@@ -43,6 +43,8 @@ namespace MVCCorret2019
             //Registro no servico de dependencia da Aplicacao
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
+
         }
 
 

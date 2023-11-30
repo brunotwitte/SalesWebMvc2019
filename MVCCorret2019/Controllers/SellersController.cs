@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MVCCorret2019.Services;
+using MVCCorret2019.Models.ViewModels;
 using MVCCorret2019.Models;
 
 namespace MVCCorret2019.Controllers
@@ -12,10 +13,12 @@ namespace MVCCorret2019.Controllers
         {
 
         private readonly SellerService _sellerService;
-        
-        public  SellersController(SellerService sellerService)
+        private readonly DepartmentService _departmentService;
+
+        public  SellersController(SellerService sellerService , DepartmentService departmentService)
         {
             _sellerService = sellerService;
+            _departmentService = departmentService;
         }
         public IActionResult Index()
         {
@@ -23,8 +26,10 @@ namespace MVCCorret2019.Controllers
             return View(list);
         }
         public IActionResult Create() {
-        
-            return View( );
+
+            var departments = _departmentService.FindAll();
+            var viewModel = new SellerFormViewModel { Departments = departments}; 
+            return View( viewModel);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
