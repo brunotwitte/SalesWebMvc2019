@@ -1,0 +1,48 @@
+﻿@model MVCCorret2019.Models.Seller
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>
+    Are ou sure to want to Delete this ?
+</h3>
+
+<div>
+    <h4>Seller</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SalaryBase)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SalaryBase)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type ="hidden" asp-for="Id" />
+        <input type  ="submit" value="Delete" class="btn- btn-danger" />
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+
+
