@@ -1,0 +1,47 @@
+﻿@model MVCCorret2019.Models.Seller
+@{
+    ViewData["Title"] = "Details";
+}
+<h2>@ViewData["Title"]<</h2>>
+<div>
+    <h4>Seller</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SalaryBase)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SalaryBase)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Department.name)
+        </dd>
+    </dl>
+ </div>>
+<div>
+
+    <a asp-action="Edit" asp-all-route-id="@Model.Id" class=" btn btn-default">Edit  </a>
+    <a asp-action="index">Back to List</a>
+
+</div>

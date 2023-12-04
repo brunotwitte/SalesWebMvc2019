@@ -42,3 +42,4 @@ C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\R
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Index.cshtml.g.cs
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\create.cshtml.g.cs
 C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Delete.cshtml.g.cs
+C:\Users\casa\source\repos\MVCCorret2019\MVCCorret2019\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Details.cshtml.g.cs
