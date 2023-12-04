@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,8 +10,14 @@ namespace MVCCorret2019.Models
     {
         public int Id { get; set; }
         public String name { get; set; }
+        [DataType(DataType.EmailAddress)]
         public String Email { get; set; }
+        [Display(Name = " Birth Date ")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime BirthDate { get; set; }
+        [Display(Name = "Base Salary")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public Double SalaryBase { get; set; }
         public Department Department { get; set; }
         public int DepartmentId  { get; set; }
