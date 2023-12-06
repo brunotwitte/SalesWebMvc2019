@@ -43,7 +43,7 @@ namespace MVCCorret2019.Services
                 _context.Seller.Remove(obj);
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateException e )
+            catch (DbUpdateException  )
             {
                 throw new IntegrityException("You can´t Delete the Seller Because He/She has  Sales ");
             }
